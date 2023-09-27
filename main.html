@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo_2.ico">
     <title>Sales_Manager</title>
 </head>
 
 <body>
 <style>
+body{
+    background-color:black
+}
+
 header {
-        background: #4671D5 url(logo_2.jpg) no-repeat 0% 50%;
+        background: #737373 url(logo_2.png) no-repeat 0% 50%;
         width: 100%;
         height: 100px;
-        color: #190773;
+        color: #737373;
+        margin: auto;
+        margin-top: 5px;
+}
+
+.rad{
+    border-radius: 25px;
+}
+.logo{
+    margin-left: 120px;  
 }  
 .title{
 	font-size: 36px;
@@ -24,34 +38,36 @@ header {
 	position: absolute;
 	top: 10px;
 	right: 100px;
+    margin: 0px 0px 0px 0px;
 }
-.Gorizont_menu { background: #6C8CD5;
+.Gorizont_menu { background: #737373;
     width: 100%;
     height: 30px;
-    border-left: 25%;
-    border-color: #000;
-    color: #190773;
+    border-color: #737373;
+    color: #423838;
 
 }
 
 .border {
-    border: 1px solid black;
-    border-width: 25%;
+    background-color: rgb(16, 75, 78);
+    border-radius: 25 px;
+    color: azure;
+    
+}
+.href{
+   color: bisque; 
 }
 
-.menu {
-    list-style: none;
-    position: absolute;
-    top: 10px;
-    right: 100px;
-    margin: -1%;
-}
 .footer {
     width: 100%;
-    background: #06266F;
+    background: #9d9d9d;
     font-size: 25%;
     height: 50%;
     height: 150px;
+    border-radius: 25px;
+}
+.text_main{
+    color: white;
 }
 ul {
     padding: 1.25rem;
@@ -64,7 +80,7 @@ ul li {
 }
 
 ul p {
-    color: #4671D5;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
     margin: -1%;
@@ -100,37 +116,40 @@ ul a:hover {
     margin-top: 3%;
 }
 </style>
+<div class="rad">
 <header>
+    <div>
+        <div><img class="logo" src="Name_main.png"></div>
 
-<div class="title">Школьные Презентации</div>
+        <ul class="menu rad">
+            <li><img width="24" height="24" src="https://img.icons8.com/color/48/telegram-app--v1.png" alt="telegram-app--v1"/><a> </a><a class="href" href="https://t.me/MMt2310">Telegram</a></li>
+            <li><img width="24" height="24" src="https://img.icons8.com/color/48/vk-circled--v2.png" alt="vk-circled--v2"/><a> </a><a class="href" href="https://vk.com/misha.tabakov">Vk</a></li>
 
-<ul class="menu">
-    <li><a href="https://t.me/MMt2310">Telegram</a></li>
-    <li><a href="https://vk.com/misha.tabakov">Vk</a></li>
-
-</ul>
+        </ul>
+    </div>
 </header>
 
 
 
 <table class="Gorizont_menu">
 <tr>
-    <th class="border"><a href="main.html">Главная страница</a></th>
-    <th class="border"><a href="page_1.html">sales meneger</a></th>
-    <th class="border">Пока пусто</th>
+    <th class="border"><a class="href"href="main.html">Главная страница</a></th>
+    <th class="border"><a class="href"href="page_1.html">sales meneger</a></th>
+    <th class="border"><a class="href"href="Ushakov.html">Ушаков</a></th>
     <th class="border">Пока пусто</th>
 </tr>
 </table>
+</div>
 
-<img src="main_2.jpg" class="foto" align="right">
+<img src="main_2.jpg" class="foto rad" align="right">
 
 <div class="text">
     
-    <p>
+    <p class="text_main">
         Идея создать этот сайт пришла мне в голову на уроке технологии 5.09.23.
         Его функционал очень прост: размещение школьных презентаций, докладов 
         и эссе в одном месте. Можно сказать, что это будет галерея лучших работ
-        9 "Б". Также я хотел попробовать себя в новой сфере программирования, 
+        9 и 10 "Б". Также я хотел попробовать себя в новой сфере программирования, 
         и я выбрал фронтенд, а точнее адаптивную вёрстку. Надеюсь 
         на вашу объективную оценку;)
     </p>
@@ -139,13 +158,13 @@ ul a:hover {
 </div>
 
 <footer class="footer">
-    
+    <div class="rad">
    
     <ul>
         <li><p class="foot" style="text-align: left;">CEO Mihail Tabakov</p></li>
         <li><p class="foot_2" style="text-align: right;">Наш сайт © 2023</p></li>
     </ul>
-
+    </div>
 </footer>
 
 
